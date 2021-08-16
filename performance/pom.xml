@@ -30,7 +30,7 @@
         -->
         <profilingOptions>-showversion</profilingOptions>
         <history.directory>${project.basedir}/history</history.directory>
-        <jmh.version>1.20</jmh.version>
+        <jmh.version>1.32</jmh.version>
 
         <!-- default values, overridden per profile -->
         <beanvalidation-impl.name>none</beanvalidation-impl.name>
