@@ -170,7 +170,7 @@
 
         <!-- Test dependencies -->
         <version.org.jboss.arquillian>1.7.0.Alpha10</version.org.jboss.arquillian>
-        <version.org.testng>6.14.3</version.org.testng>
+        <version.org.testng>7.0.0</version.org.testng>
         <!-- it must be the exact same version than the one used in the Bean Validation TCK -->
         <version.org.assertj.assertj-core>3.8.0</version.org.assertj.assertj-core>
         <version.junit>4.13.1</version.junit>
@@ -296,10 +296,10 @@
         <maven.compiler.testRelease>${java-version.test.release}</maven.compiler.testRelease>
 
         <!-- Set empty default values to avoid Maven leaving property references (${...}) when it doesn't find a value -->
-        <surefire.jvm.args.additional></surefire.jvm.args.additional>
-        <surefire.jvm.args.illegal-access></surefire.jvm.args.illegal-access>
-        <surefire.jvm.args.add-opens></surefire.jvm.args.add-opens>
-        <surefire.jvm.args.java-version></surefire.jvm.args.java-version>
+        <surefire.jvm.args.additional/>
+        <surefire.jvm.args.illegal-access/>
+        <surefire.jvm.args.add-opens/>
+        <surefire.jvm.args.java-version/>
         <!--
           The arguments below are Shrinkwrap settings taken from
           https://github.com/shrinkwrap/resolver/blob/788a3c1148af3a7ebdfdaf817393273f5f5ee17b/impl-maven/src/main/java/org/jboss/shrinkwrap/resolver/impl/maven/bootstrap/MavenSettingsBuilder.java#L80
@@ -318,8 +318,8 @@
          -->
         <surefire.environment>default</surefire.environment>
 
-        <arquillian.wildfly.jvm.args.add-opens></arquillian.wildfly.jvm.args.add-opens>
-        <arquillian.wildfly.jvm.args.add-modules></arquillian.wildfly.jvm.args.add-modules>
+        <arquillian.wildfly.jvm.args.add-opens/>
+        <arquillian.wildfly.jvm.args.add-modules/>
         <arquillian.wildfly.jvm.args>-Duser.language=en ${arquillian.wildfly.jvm.args.add-opens} ${arquillian.wildfly.jvm.args.add-modules}</arquillian.wildfly.jvm.args>
 
         <!-- JDK version required for the build -->
@@ -1189,7 +1189,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1208,7 +1208,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1227,7 +1227,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1240,7 +1240,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1255,7 +1255,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -1350,7 +1350,7 @@
                                 </goals>
                                 <configuration>
                                     <rules>
-                                        <requireReleaseDeps />
+                                        <requireReleaseDeps/>
                                         <requireJavaVersion>
                                             <version>[17,18)</version>
                                         </requireJavaVersion>
