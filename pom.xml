@@ -139,7 +139,7 @@
         <version.com.fasterxml.classmate>1.5.1</version.com.fasterxml.classmate>
         <version.joda-time>2.9.7</version.joda-time>
         <version.org.slf4j>1.7.22</version.org.slf4j>
-        <version.org.apache.logging.log4j>2.17.1</version.org.apache.logging.log4j>
+        <version.org.apache.logging.log4j>2.18.0</version.org.apache.logging.log4j>
 
         <!--
             These dependencies are used for integration tests with WildFly.
@@ -297,11 +297,11 @@
 
         <!-- Set empty default values to avoid Maven leaving property references (${...}) when it doesn't find a value -->
         <!-- Argument passed from the command line -->
-        <surefire.jvm.args.commandline></surefire.jvm.args.commandline>
-        <surefire.jvm.args.additional></surefire.jvm.args.additional>
-        <surefire.jvm.args.illegal-access></surefire.jvm.args.illegal-access>
-        <surefire.jvm.args.add-opens></surefire.jvm.args.add-opens>
-        <surefire.jvm.args.java-version></surefire.jvm.args.java-version>
+        <surefire.jvm.args.commandline/>
+        <surefire.jvm.args.additional/>
+        <surefire.jvm.args.illegal-access/>
+        <surefire.jvm.args.add-opens/>
+        <surefire.jvm.args.java-version/>
         <!--
           The arguments below are Shrinkwrap settings taken from
           https://github.com/shrinkwrap/resolver/blob/788a3c1148af3a7ebdfdaf817393273f5f5ee17b/impl-maven/src/main/java/org/jboss/shrinkwrap/resolver/impl/maven/bootstrap/MavenSettingsBuilder.java#L80
@@ -320,8 +320,8 @@
          -->
         <surefire.environment>default</surefire.environment>
 
-        <arquillian.wildfly.jvm.args.add-opens></arquillian.wildfly.jvm.args.add-opens>
-        <arquillian.wildfly.jvm.args.add-modules></arquillian.wildfly.jvm.args.add-modules>
+        <arquillian.wildfly.jvm.args.add-opens/>
+        <arquillian.wildfly.jvm.args.add-modules/>
         <arquillian.wildfly.jvm.args>-Duser.language=en ${arquillian.wildfly.jvm.args.add-opens} ${arquillian.wildfly.jvm.args.add-modules}</arquillian.wildfly.jvm.args>
 
         <!-- JDK version required for the build -->
@@ -1170,7 +1170,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1189,7 +1189,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1208,7 +1208,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1221,7 +1221,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -1236,7 +1236,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -1331,7 +1331,7 @@
                                 </goals>
                                 <configuration>
                                     <rules>
-                                        <requireReleaseDeps />
+                                        <requireReleaseDeps/>
                                         <requireJavaVersion>
                                             <version>[17,18)</version>
                                         </requireJavaVersion>
